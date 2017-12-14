@@ -1,0 +1,38 @@
+.table {border:1px solid black;margin:0 auto; margin-top:10%;-webkit-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);margin-bottom:200px;}
+.table th { background:#ffea00; justify-content: center; text-align: center; font-size: 1.5rem; }
+.table td:nth-child(1) { background:#fff; color:black; }
+.table td:nth-child(2) { background:#f50057;color:white; }
+.table td:nth-child(3) { background:#ff6f00; color:white;}
+.table td:nth-child(4) { color:black;}
+.table td:nth-child(5) { background:#1de9b6; color:white;}
+.table td:nth-child(6) { background:#7c4dff; color:white;}
+.table td:nth-child(7) { background:none; color:white; padding:0; margin:0;}
+.table td:nth-child(8) { background:none; color:white; padding:0; margin:0;}
+.thead-inverse tr th:nth-child(1) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(2) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(3) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(4) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(5) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(6) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(7) { background:#000; color:white; }
+.thead-inverse tr th:nth-child(8) { background:#000; color:white; }
+.table th { border:1px solid black;}
+.table th:hover { border:1px solid black;-webkit-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);}
+.table thead th {border:none; border-right:1px solid white;}
+.menu { background: #000; font-size: 1.5rem;-webkit-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4);
+    box-shadow: 3px -1px 81px 3px rgba(0,0,0,0.4); position:fixed; width:100vw;}
+.menu ul { list-style: none;display:flex; flex-direction:row;}
+.menu ul li a{text-decoration: none;color:white; display:flex; justify-content: center; align-items: center;padding:50px;border-bottom:5px solid #000;}
+.menu ul li a:hover {color:#ffea00;padding:50px; border-bottom:5px solid #ffea00;}
+.menu ul li a.active {color:#ffea00;padding:50px; border-bottom:5px solid #ffea00;}
+
+.form-group { padding:20px; display:flex;}
+.form-group input {width:65vw;}
+.form-group label { margin:10px;}
+
+.btn {padding:20px;}
