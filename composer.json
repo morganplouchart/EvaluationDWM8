@@ -9,7 +9,11 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
+<<<<<<< HEAD
         "laravelcollective/html": "^5.3.0"
+=======
+        "laravelcollective/html": "^5.4.0"
+>>>>>>> de2d4612dda96391e04a5df73e24a39f1bcaa991
     },
     "require-dev": {
         "filp/whoops": "~2.0",
