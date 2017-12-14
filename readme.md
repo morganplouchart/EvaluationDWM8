@@ -3,7 +3,8 @@
 3) Suppression d'un jeux
 4) Modification d'un jeux
 5) Bloquer à la table relationnel, afficher le lien dans la vue accueil
-
+6) Amelioration du graphisme général
+7) Ajout de l'élément genre
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
