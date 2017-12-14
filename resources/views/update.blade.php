@@ -2,10 +2,10 @@
 @section('title', 'update')
 @section('main')
 
-
+    <h1>Modifier jeux</h1>
 <div class="container">
     <div class="table">
-    <h1>Modifier jeux</h1>
+
     <div class="form">
         {!! Form::open(['url' => '/game/update', 'class' => 'insertForm']) !!}
         {{{ Form::hidden('id', $game->id)}}}

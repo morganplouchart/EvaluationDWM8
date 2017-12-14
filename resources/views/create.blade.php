@@ -1,12 +1,12 @@
 @extends('layouts.base')
 @section('title', 'insertion')
 @section('main')
-
+    <h1>Ajouter un jeux </h1>
 
     <div class="container">
 
         <div class="table">
-            <h1>Ajouter un jeux </h1>
+
             {!! Form::open(['url' => '/game/insert', 'class' => 'insertForm']) !!}
 
             <div class="form-group">

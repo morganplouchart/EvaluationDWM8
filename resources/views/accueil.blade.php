@@ -2,8 +2,15 @@
 <body>
 @section('title', 'accueil')
 @section('main')
-    <div class="container">
-        <h1>Liste des jeux videos</h1>
+
+    <style>
+        body{ background: white;}
+
+
+    </style>
+    <h1>Liste des jeux videos</h1>
+    <div class="fulltable">
+
         <table class="table">
 
             <thead>
