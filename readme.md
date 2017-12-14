@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+1) Création de la base de données
+2) Insertion d'un jeux
+3) Suppression d'un jeux
+4) Modification d'un jeux
+5) Bloquer à la table relationnel, afficher le lien dans la vue accueil
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
