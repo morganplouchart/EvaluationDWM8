@@ -10,7 +10,6 @@
             <th>Nom</th>
             <th>Editeur</th>
             <th>Date de sortie</th>
-            <th>Genre</th>
             <th>suppresion</th>
             <th>modifier</th>
 
@@ -23,13 +22,7 @@
             <tr>
                 <td>{{ $game->nom }} </td>
                 <td>{{ $game->editeur }} </td>
-                <td>{{ $game->date }} </td
-                <td>{{ $game->genre }} </td>
-
-                @foreach($game->genre as $genre)
-                    <span>{{ $genre->nom }} </span>
-                @endforeach
-
+                <td>{{ $game->date }} </td>
 
             <td>
                 <form class="formdel"  method="GET" action="/game/delete/{{$game->id}}" >
