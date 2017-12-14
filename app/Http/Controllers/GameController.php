@@ -29,7 +29,7 @@ class GameController extends Controller
         $game->date = $request->date;
         $game->editeur = $request->editeur;
         $game->genre_id = $request->genre;
-        $game->genre()->attach($request->genre);
+        //$game->console()->attach($request->console);
         $game->save();
         return redirect('/');
 
@@ -64,6 +64,7 @@ class GameController extends Controller
         $game->nom = $request->nom;
         $game->date = $request->date;
         $game->editeur = $request->editeur;
+        $game->genre_id = $request->genre;
         $game->save();
         return redirect('/');
 

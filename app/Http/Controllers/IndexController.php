@@ -14,7 +14,7 @@ class IndexController extends Controller
     {
         $genres = genre::all();
         $games = game::all();
-        return view('accueil', ['games' => $games], ['genres' => $genres]);
+        return view('accueil', ['games' => $games]);
     }
 
 }

@@ -11,7 +11,7 @@
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/', 'IndexController@index');
 Route::get('/create', 'CreateController@index');
 Route::get('/game/delete/{id}', 'GameController@deleteOne');
@@ -20,13 +20,4 @@ Route::post('/game/insert', 'GameController@insertOne');
 Route::post('/game/update', 'GameController@updateOneAction');
 Route::get('/game/update/{id}', 'GameController@updateOne');
 
-=======
-Route::get('/', 'BaseController@index');
-Route::get('/create', 'CreateController@index');
 
-Route::post('/cat/insert', 'CatController@insertOne');
-Route::post('/cat/update', 'CatController@updateOneAction');
-
-Route::get('/cat/delete/{id}', 'CatController@deleteOne');
-Route::get('/cat/update/{id}', 'CatController@updateOne');
->>>>>>> de2d4612dda96391e04a5df73e24a39f1bcaa991
