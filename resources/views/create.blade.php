@@ -1,6 +1,7 @@
 @extends('layouts.base')
 @section('title', 'Ajouter un jeux')
 @section('main')
+
     <h1>Ajouter un jeux </h1>
 
     <div class="container">

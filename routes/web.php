@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'IndexController@index');
+Route::get('accueil', 'IndexController@index');
 Route::get('/create', 'CreateController@index');
 Route::get('/game/delete/{id}', 'GameController@deleteOne');
 Route::post('/game/insert', 'GameController@insertOne');
@@ -20,4 +20,4 @@ Route::post('/game/insert', 'GameController@insertOne');
 Route::post('/game/update', 'GameController@updateOneAction');
 Route::get('/game/update/{id}', 'GameController@updateOne');
 
-
+Route::get('/', 'IndexController@enter');

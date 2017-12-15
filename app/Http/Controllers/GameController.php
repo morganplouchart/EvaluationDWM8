@@ -38,7 +38,7 @@ class GameController extends Controller
         $game->genre()->detach();
         $game->console()->detach();
         $game->delete();
-        return redirect('/');
+        return redirect('accueil');
 
     }
 
@@ -78,7 +78,7 @@ class GameController extends Controller
         $game->genre()->attach($request->genres);
         $game->console()->detach();
         $game->console()->attach($request->consoles);
-        return redirect('/');
+        return redirect('accueil');
 
 
     }

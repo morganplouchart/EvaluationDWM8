@@ -19,4 +19,13 @@ class IndexController extends Controller
 
     }
 
+    public function enter()
+
+
+    {
+        return view('enter');
+    }
+
+
+
 }

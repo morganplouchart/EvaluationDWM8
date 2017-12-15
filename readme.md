@@ -63,6 +63,11 @@
    - Création des models Console, Game, Genre
    
 
+/Ce que j'ai rajouter
+
+   - Ajout d'une page Enter
+   - Ajout du logo mario
+
 /Ce que j'ai pas pu faire
     
    - Mettre en place un systeme d'insertion dynamique d'images.
