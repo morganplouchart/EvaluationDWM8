@@ -24,7 +24,7 @@ class GameController extends Controller
         $game->save();
         $game->genre()->attach($request->genres);
         $game->console()->attach($request->consoles);
-        return redirect('/');
+        return redirect('accueil');
 
 
     }
