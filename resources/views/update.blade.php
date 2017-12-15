@@ -1,9 +1,9 @@
 @extends('layouts.base')
-@section('title', 'update')
+@section('title', 'Modifier un jeux')
 @section('main')
 
     <h1>Modifier jeux</h1>
-<div class="container">
+    <div class="container">
     <div class="table">
 
     <div class="form">
@@ -15,16 +15,30 @@
         </div>
         <div class="form-group">
             {{{ Form::label('Date') }}}
-            {{{ Form::text('date', $game->date) }}}
+            {{{ Form::date('date', $game->date) }}}
         </div>
         <div class="form-group">
             {{{ Form::label('Editeur') }}}
             {{{ Form::text('editeur', $game->editeur) }}}
         </div>
 
+
         <div class="form-group">
+
             {{{ Form::label('Genre') }}}
-            {{{ Form::text('genre', $game->genre_id) }}}
+
+            {{{ Form::select('genres[]', $genres, $game->genre, ['multiple' => true, 'class' => 'select-genre']) }}}
+
+
+        </div>
+
+        <div class="form-group">
+
+            {{{ Form::label('Consoles') }}}
+
+            {{{ Form::select('consoles[]', $consoles, $game->console, ['multiple' => true, 'class' => 'select-genre']) }}}
+
+
         </div>
 
         <div class="form-group">

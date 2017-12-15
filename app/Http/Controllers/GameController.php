@@ -10,13 +10,6 @@ use App\Console;
 class GameController extends Controller
 {
 
-    public function create()
-
-    {
-
-        return view('/create');
-
-    }
 
 
     public function insertOne(Request $request)
@@ -28,9 +21,9 @@ class GameController extends Controller
         $game->nom = $request->nom;
         $game->date = $request->date;
         $game->editeur = $request->editeur;
-        $game->genre_id = $request->genre;
-        //$game->console()->attach($request->console);
         $game->save();
+        $game->genre()->attach($request->genres);
+        $game->console()->attach($request->consoles);
         return redirect('/');
 
 
@@ -42,6 +35,8 @@ class GameController extends Controller
     {
 
         $game = game::find($id);
+        $game->genre()->detach();
+        $game->console()->detach();
         $game->delete();
         return redirect('/');
 
@@ -51,8 +46,21 @@ class GameController extends Controller
 
     {
         $game = game::find($id);
-        return view('update', ['game' => $game]);
-        //dd($id);
+
+        $genreAll = genre::all();
+        $genres = [];
+        foreach ($genreAll as $value) {
+            $genres[$value->id] = $value->genre;
+        }
+
+        $consoleAll = console::all();
+        $consoles = [];
+        foreach ($consoleAll as $value) {
+            $consoles[$value->id] = $value->console;
+        }
+
+        return view('update', ['genres' => $genres , 'game' => $game, 'consoles' => $consoles]);
+        //dd($consoles);
 
     }
 
@@ -64,8 +72,12 @@ class GameController extends Controller
         $game->nom = $request->nom;
         $game->date = $request->date;
         $game->editeur = $request->editeur;
-        $game->genre_id = $request->genre;
+        //$game->genre = $request->genre;
         $game->save();
+        $game->genre()->detach();
+        $game->genre()->attach($request->genres);
+        $game->console()->detach();
+        $game->console()->attach($request->consoles);
         return redirect('/');
 
 

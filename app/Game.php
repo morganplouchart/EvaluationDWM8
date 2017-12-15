@@ -12,4 +12,9 @@ class Game extends Model
     {
         return $this->belongsToMany('App\Genre');
     }
+
+    public function console()
+    {
+        return $this->belongsToMany('App\Console');
+    }
 }

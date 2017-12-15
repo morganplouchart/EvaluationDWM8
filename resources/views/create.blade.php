@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title', 'insertion')
+@section('title', 'Ajouter un jeux')
 @section('main')
     <h1>Ajouter un jeux </h1>
 
@@ -16,7 +16,7 @@
             </div>
             <div class="form-group">
                 {{{ Form::label('Date') }}}
-                {{{ Form::text('date') }}}
+                {{{ Form::date('date') }}}
             </div>
 
             <div class="form-group">
@@ -25,9 +25,20 @@
             </div>
 
             <div class="form-group">
-                {{{ Form::label('Genre') }}}
-                {{{ Form::text('genre') }}}
+
+                {{{ Form::label('Genre', 'Genre', ['class' => 'align-top']) }}}
+                {{{ Form::select('genres[]', $genres,'',['multiple' => true, 'class' => 'select-genre']) }}}
+
             </div>
+
+            <div class="form-group">
+
+                {{{ Form::label('Consoles', 'Consoles', ['class' => 'align-top']) }}}
+                {{{ Form::select('consoles[]', $consoles, 0,['multiple' => true, 'class' => 'select-genre']) }}}
+
+            </div>
+
+
             <div class="form-group">
             {{{ Form::submit('inserer un jeux' , ['class' => 'btnSub']) }}}
             {!! Form::close() !!}
