@@ -67,12 +67,13 @@
 
    - Ajout d'une page Enter
    - Ajout du logo mario
+   - Responsive design
 
 /Ce que j'ai pas pu faire
     
    - Mettre en place un systeme d'insertion dynamique d'images.
    - Barre de recherche, et function search
-   - Responsive design
+  
 
 
    
